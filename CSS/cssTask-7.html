@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #8B1C42;
+        }
+        .container {
+            width: 50%;
+            padding: 30px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
+            color: black;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+            font-size: 16px;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .gender-options {
+            display: flex;
+            gap: 15px;
+            margin-top: 5px;
+        }
+        .btn {
+            width: 100%;
+            padding: 12px;
+            background: #8B1C42;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Register</h2>
+        <label>Name:</label>
+        <input type="text" placeholder="Your name">
+        
+        <label>Email:</label>
+        <input type="email" placeholder="Your email">
+        
+        <label>Password:</label>
+        <input type="password">
+        
+        <label>Phone Number:</label>
+        <input type="text">
+        
+        <label>Gender:</label>
+        <div class="gender-options">
+            <label><input type="radio" name="gender"> Male</label>
+            <label><input type="radio" name="gender"> Female</label>
+            <label><input type="radio" name="gender"> Other</label>
+        </div>
+        
+        <label>Language:</label>
+        <select>
+            <option>Select language</option>
+        </select>
+        
+        <label>Zip Code:</label>
+        <input type="text">
+        
+        <label>About:</label>
+        <textarea placeholder="Write about yourself..."></textarea>
+        
+        <button class="btn">Register</button>
+    </div>
+</body>
+</html>

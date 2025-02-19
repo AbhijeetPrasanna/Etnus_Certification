@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Styled Page</title>
+    <style>
+        body {
+            background: lightyellow;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            width: 100vw;
+            height: 100vh;
+            background: rgb(147, 168, 40);
+            padding: 40px;
+            box-sizing: border-box;
+        }
+        h1 {
+            color: purple;
+        }
+        .sidebar {
+            float: left;
+            width: 150px;
+            margin-right: 20px;
+        }
+        .sidebar a {
+            display: block;
+            background: lightblue;
+            color: darkblue;
+            padding: 10px;
+            text-decoration: none;
+            margin-bottom: 10px;
+            border-left: 15px solid black;
+            font-weight: bold;
+        }
+        .sidebar a:hover {
+            background: white;
+        }
+        .content {
+            font-size: 16px;
+        }
+        .footer {
+            margin-top: 30px;
+            font-style: italic;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>My first styled page</h1>
+        <div class="sidebar">
+            <a href="#">Home page</a>
+            <a href="#">Musings</a>
+            <a href="#">My town</a>
+            <a href="#">Links</a>
+        </div>
+        <div class="content">
+            <p>Welcome to my styled page!</p>
+            <p>It lacks images, but at least it has style. And it has links, even if they don’t go anywhere...</p>
+            <p>There should be more here, but I don’t know what yet.</p>
+        </div>
+        <div class="footer">Made 5 April 2004<br>by myself.</div>
+    </div>
+</body>
+</html>
