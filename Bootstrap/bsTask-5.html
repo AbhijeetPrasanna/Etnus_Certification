@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+        .form-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        .form-label {
+            color: #333;
+            font-weight: 500;
+            margin-bottom: 5px;
+        }
+        .form-control {
+            border-radius: 4px;
+            border: 1px solid #ced4da;
+        }
+        .btn-send {
+            background-color: #f0ad4e;
+            border-color: #f0ad4e;
+            color: white;
+            padding: 8px 24px;
+            border-radius: 4px;
+        }
+        .btn-send:hover {
+            background-color: #ec971f;
+            border-color: #ec971f;
+            color: white;
+        }
+        textarea.form-control {
+            resize: vertical;
+            min-height: 100px;
+        }
+        .radio-group {
+            padding-top: 8px;
+        }
+        .input-group-text {
+            background-color: #e9ecef;
+            border: 1px solid #ced4da;
+            border-right: none;
+        }
+        .input-group .form-control {
+            border-left: none;
+        }
+        .invalid-feedback {
+            color: #dc3545;
+            font-size: 0.875em;
+            margin-top: 0.25rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <form id="contactForm" novalidate>
+            <!-- First Name -->
+            <div class="mb-3">
+                <label class="form-label">First Name</label>
+                <div class="input-group">
+                    <span class="input-group-text">
+                        <i class="fas fa-user"></i>
+                    </span>
+                    <input type="text" class="form-control" name="firstName" required>
+                    <div class="invalid-feedback">Please apply your First Name</div>
+                </div>
+            </div>
+
+            <!-- Last Name -->
+            <div class="mb-3">
+                <label class="form-label">Last Name</label>
+                <div class="input-group">
+                    <span class="input-group-text">
+                        <i class="fas fa-user"></i>
+                    </span>
+                    <input type="text" class="form-control" name="lastName" required>
+                    <div class="invalid-feedback">Please apply your Last Name</div>
+                </div>
+            </div>
+
+            <!-- E-Mail -->
+            <div class="mb-3">
+                <label class="form-label">E-Mail</label>
+                <div class="input-group">
+                    <span class="input-group-text">
+                        <i class="fas fa-envelope"></i>
+                    </span>
+                    <input type="email" class="form-control" name="email" required>
+                    <div class="invalid-feedback">Please apply your E-Mail</div>
+                </div>
+            </div>
+
+            <!-- Phone # -->
+            <div class="mb-3">
+                <label class="form-label">Phone #</label>
+                <div class="input-group">
+                    <span class="input-group-text">
+                        <i class="fas fa-phone"></i>
+                    </span>
+                    <input type="tel" class="form-control" name="phone" placeholder="(845)555-1212" required>
+                    <div class="invalid-feedback">Please apply your Phone #</div>
+                </div>
+            </div>
+
+            <!-- Address -->
+            <div class="mb-3">
+                <label class="form-label">Address</label>
+                <div class="input-group">
+                    <span class="input-group-text">
+                        <i class="fas fa-home"></i>
+                    </span>
+                    <input type="text" class="form-control" name="address" required>
+                    <div class="invalid-feedback">Please apply your Address</div>
+                </div>
+            </div>
+
+            <!-- City -->
+            <div class="mb-3">
+                <label class="form-label">City</label>
+                <div class="input-group">
+                    <span class="input-group-text">
+                        <i class="fas fa-home"></i>
+                    </span>
+                    <input type="text" class="form-control" name="city" required>
+                    <div class="invalid-feedback">Please apply your City</div>
+                </div>
+            </div>
+
+            <!-- State -->
+            <div class="mb-3">
+                <label class="form-label">State</label>
+                <div class="input-group">
+                    <span class="input-group-text">
+                        <i class="fas fa-list"></i>
+                    </span>
+                    <select class="form-control" name="state" required>
+                        <option value="">Please select your state</option>
+                        <option value="NY">New York</option>
+                        <option value="CA">California</option>
+                        <!-- Add more states as needed -->
+                    </select>
+                    <div class="invalid-feedback">Please apply your State</div>
+                </div>
+            </div>
+
+            <!-- Do you have hosting? -->
+            <div class="mb-3">
+                <label class="form-label">Do you have hosting?</label>
+                <div class="radio-group">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="hosting" id="hostingYes" value="yes" required>
+                        <label class="form-check-label" for="hostingYes">Yes</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="hosting" id="hostingNo" value="no">
+                        <label class="form-check-label" for="hostingNo">No</label>
+                    </div>
+                    <div class="invalid-feedback">Please apply whether you have hosting</div>
+                </div>
+            </div>
+
+            <!-- Project Description -->
+            <div class="mb-3">
+                <label class="form-label">Project Description</label>
+                <div class="input-group">
+                    <span class="input-group-text">
+                        <i class="fas fa-pencil-alt"></i>
+                    </span>
+                    <textarea class="form-control" name="description" required></textarea>
+                    <div class="invalid-feedback">Please apply your Project Description</div>
+                </div>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="text-end">
+                <button type="submit" class="btn btn-send">
+                    Send <i class="fas fa-paper-plane ms-1"></i>
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Form validation
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            // Remove any existing validation state
+            this.classList.remove('was-validated');
+            
+            // Remove any existing dynamic error messages
+            const existingErrors = this.getElementsByClassName('invalid-feedback');
+            Array.from(existingErrors).forEach(error => {
+                error.style.display = 'none';
+            });
+
+            if (!this.checkValidity()) {
+                event.stopPropagation();
+                this.classList.add('was-validated');
+            } else {
+                // Form is valid, you can submit it here
+                console.log('Form is valid, ready to submit');
+            }
+        });
+    </script>
+</body>
+</html> 

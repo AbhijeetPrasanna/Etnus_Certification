@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .pricing-card {
+            border: 1px solid rgba(0,0,0,0.125);
+            border-radius: 0.25rem;
+            padding: 1.25rem;
+            background: white;
+        }
+        .price {
+            font-size: 2rem;
+            font-weight: 400;
+        }
+        .price-period {
+            color: #6c757d;
+            font-weight: 400;
+        }
+        .feature-list {
+            list-style: none;
+            padding: 0;
+            margin: 1rem 0;
+            text-align: center;
+            color: #6c757d;
+        }
+        .btn-outline-primary {
+            border-color: #007bff;
+            color: #007bff;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+        footer {
+            padding: 3rem 0;
+            border-top: 1px solid #dee2e6;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container py-5">
+        <div class="text-center mb-5">
+            <h1 class="display-4 mb-3">Pricing</h1>
+            <p class="lead text-muted">
+                Quickly build an effective pricing table for your potential customers with this
+                Bootstrap example. It's built with default Bootstrap components and utilities
+                with little customization.
+            </p>
+        </div>
+
+        <div class="row justify-content-center">
+            <!-- Free Tier -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="pricing-card h-100">
+                    <div class="text-center">
+                        <h4>Free</h4>
+                        <div class="price">
+                            $0 <span class="price-period">/ mo</span>
+                        </div>
+                        <ul class="feature-list">
+                            <li>10 users included</li>
+                            <li>2 GB of storage</li>
+                            <li>Email support</li>
+                            <li>Help center access</li>
+                        </ul>
+                        <button class="btn btn-outline-primary btn-lg w-100">Sign up for free</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pro Tier -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="pricing-card h-100">
+                    <div class="text-center">
+                        <h4>Pro</h4>
+                        <div class="price">
+                            $15 <span class="price-period">/ mo</span>
+                        </div>
+                        <ul class="feature-list">
+                            <li>20 users included</li>
+                            <li>10 GB of storage</li>
+                            <li>Priority email support</li>
+                            <li>Help center access</li>
+                        </ul>
+                        <button class="btn btn-primary btn-lg w-100">Get started</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Enterprise Tier -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="pricing-card h-100">
+                    <div class="text-center">
+                        <h4>Enterprise</h4>
+                        <div class="price">
+                            $29 <span class="price-period">/ mo</span>
+                        </div>
+                        <ul class="feature-list">
+                            <li>30 users included</li>
+                            <li>15 GB of storage</li>
+                            <li>Phone and email support</li>
+                            <li>Help center access</li>
+                        </ul>
+                        <button class="btn btn-primary btn-lg w-100">Contact us</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md">
+                    <div class="text-muted">B</div>
+                    <small class="d-block mb-3 text-muted">© 2017</small>
+                </div>
+                <div class="col-6 col-md">
+                    <h5>Features</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="#">Cool stuff</a></li>
+                        <li><a class="text-muted" href="#">Random feature</a></li>
+                        <li><a class="text-muted" href="#">Team feature</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md">
+                    <h5>Resources</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="#">Resource</a></li>
+                        <li><a class="text-muted" href="#">Resource name</a></li>
+                        <li><a class="text-muted" href="#">Another resource</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md">
+                    <h5>About</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="#">Team</a></li>
+                        <li><a class="text-muted" href="#">Locations</a></li>
+                        <li><a class="text-muted" href="#">Privacy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

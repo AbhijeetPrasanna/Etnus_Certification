@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .error-message {
+            color: #dc3545;
+            font-size: 0.875em;
+            margin-top: 0.25rem;
+            display: none;
+        }
+        .form-control.error {
+            border-color: #dc3545;
+        }
+        .container {
+            max-width: 500px;
+            padding: 20px;
+            background-color: #f8f9fa;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form id="registrationForm" novalidate>
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" required>
+                <div class="error-message" id="nameError">Name is required</div>
+            </div>
+            
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" required>
+                <div class="error-message" id="emailError">Email is required</div>
+            </div>
+            
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password" required>
+                <div class="error-message" id="passwordError">Password is required</div>
+            </div>
+            
+            <div class="mb-3">
+                <label for="hobbies" class="form-label">Hobbies</label>
+                <select class="form-select" id="hobbies">
+                    <option value="">Select a hobby</option>
+                    <option value="reading">Reading</option>
+                    <option value="gaming">Gaming</option>
+                    <option value="sports">Sports</option>
+                    <option value="cooking">Cooking</option>
+                </select>
+            </div>
+            
+            <button type="submit" class="btn btn-danger w-100">Submit</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('registrationForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Reset previous error states
+            const inputs = ['name', 'email', 'password'];
+            inputs.forEach(field => {
+                const element = document.getElementById(field);
+                const errorElement = document.getElementById(field + 'Error');
+                element.classList.remove('error');
+                errorElement.style.display = 'none';
+            });
+            
+            // Check each required field
+            let hasError = false;
+            inputs.forEach(field => {
+                const element = document.getElementById(field);
+                const errorElement = document.getElementById(field + 'Error');
+                
+                if (!element.value.trim()) {
+                    element.classList.add('error');
+                    errorElement.style.display = 'block';
+                    hasError = true;
+                }
+            });
+            
+            if (!hasError) {
+                // Form is valid, you can submit it here
+                console.log('Form submitted successfully');
+            }
+        });
+    </script>
+</body>
+</html>

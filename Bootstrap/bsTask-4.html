@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Material Cards</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .card {
+            border: none;
+            border-radius: 2px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+            transition: all 0.3s ease;
+            background: white;
+        }
+        .card:hover {
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+        .card-img-top {
+            border-radius: 2px 2px 0 0;
+            height: 200px;
+            object-fit: cover;
+            width: 100%;
+        }
+        .card-title {
+            color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            font-size: 24px;
+            font-weight: 500;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+            z-index: 2;
+        }
+        .blue-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,100,200,0.6));
+            border-radius: 2px 2px 0 0;
+            z-index: 1;
+        }
+        .card-body {
+            padding: 16px;
+        }
+        .card-text {
+            color: rgba(0,0,0,0.7);
+            font-size: 14px;
+            margin-bottom: 16px;
+        }
+        .card-links {
+            margin-top: 8px;
+        }
+        .card-link {
+            color: #FFA726 !important;
+            text-decoration: none;
+            font-weight: 500;
+            margin-right: 16px;
+            font-size: 14px;
+        }
+        .card-link:hover {
+            color: #FF9800 !important;
+        }
+        .img-container {
+            position: relative;
+            height: 200px;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div class="container py-5">
+        <div class="row">
+            <!-- First Card -->
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="img-container">
+                        <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bGFuZHNjYXBlfGVufDB8fDB8fHww&auto=format&fit=crop&w=400&q=60" class="card-img-top" alt="Material Cards">
+                        <div class="blue-overlay"></div>
+                        <h5 class="card-title">MATERIAL<br>CARDS</h5>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">Cards for display in portfolio style material design by Google.</p>
+                        <div class="card-links">
+                            <a href="#" class="card-link">LINK</a>
+                            <a href="#" class="card-link">LINK</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Second Card -->
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="img-container">
+                        <img src="https://images.unsplash.com/photo-1511884642898-4c92249e20b6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bGFuZHNjYXBlfGVufDB8fDB8fHww&auto=format&fit=crop&w=400&q=60" class="card-img-top" alt="Material Cards">
+                        <div class="blue-overlay"></div>
+                        <h5 class="card-title">MATERIAL<br>CARDS</h5>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">Cards for display in portfolio style material design by Google.</p>
+                        <div class="card-links">
+                            <a href="#" class="card-link">LINK</a>
+                            <a href="#" class="card-link">LINK</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Third Card -->
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="img-container">
+                        <img src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bGFuZHNjYXBlfGVufDB8fDB8fHww&auto=format&fit=crop&w=400&q=60" class="card-img-top" alt="Material Cards">
+                        <div class="blue-overlay"></div>
+                        <h5 class="card-title">MATERIAL<br>CARDS</h5>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">Cards for display in portfolio style material design by Google.</p>
+                        <div class="card-links">
+                            <a href="#" class="card-link">LINK</a>
+                            <a href="#" class="card-link">LINK</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fourth Card -->
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="img-container">
+                        <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bGFuZHNjYXBlfGVufDB8fDB8fHww&auto=format&fit=crop&w=400&q=60" class="card-img-top" alt="Material Cards">
+                        <div class="blue-overlay"></div>
+                        <h5 class="card-title">MATERIAL<br>CARDS</h5>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">Cards for display in portfolio style material design by Google.</p>
+                        <div class="card-links">
+                            <a href="#" class="card-link">LINK</a>
+                            <a href="#" class="card-link">LINK</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
