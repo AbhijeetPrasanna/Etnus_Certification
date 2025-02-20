@@ -1,0 +1,28 @@
+body {
+    background: linear-gradient(to right, #ffecd2, #fcb69f);
+    font-family: Arial, sans-serif;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+.container {
+    max-width: 500px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.table {
+    background: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+}
